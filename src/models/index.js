@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const db = {};
 db.mongoose = mongoose;
 db.url = config.url;
-db.issues = require("./Issue.model.js")(mongoose);
-db.projects = require("./Project.model.js")(mongoose);
+db.issues = require("./issue.model.js")(mongoose);
+db.projects = require("./project.model.js")(mongoose);
 
 module.exports = db;
